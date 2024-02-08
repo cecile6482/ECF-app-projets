@@ -1,0 +1,164 @@
+:root {
+  --van-gogh: #7C938E;
+  --blush: #f8b3cc;
+  --ceramic: #f3e7db;
+  --night: #0b140e;
+  --lime: #c7b65d;
+  --yolk: #f3a732;
+  --main-font-family: 'Roboto', sans-serif;
+}
+
+.page {
+  background-color: var(--ceramic);
+  min-height: 100vh;
+  margin-top: 0;
+  padding-top: 0%;
+} 
+
+.text {
+  color: var(--yolk);
+  font-family: var(--main-font-family);
+  font-size: 4rem;
+  padding-top: 30px;
+}
+
+.btn {
+  background-color: var(--yolk);
+  border: none;
+  color: var(--night);
+  font-family: var(--main-font-family);
+}
+
+.container {
+  margin-top: 5%;
+  border: 3px solid var(--lime);
+  border-radius: 10px;
+  padding: 20px;
+  background-color: var(--van-gogh);
+  width: 40vw;
+  height: 60vh;
+}
+
+.container h2 {
+  color: var(--lime);
+  font-family: var(--main-font-family);
+  font-size: 2rem;
+  margin-bottom: 20px;
+  padding-top: 10px;
+}
+
+.mb-3 {
+  color: var(--lime);
+  font-family: var(--main-font-family);
+  font-size: 1.3rem;
+}
+
+.mb-3 input {
+  background-color: var(--ceramic);
+  border: none;
+  border: 1px solid var(--lime);
+}
+
+.mb-3 textarea {
+  background-color: var(--ceramic);
+  border: none;
+  border: 1px solid var(--lime);
+}
+
+.profil {
+  color: var(--night);
+  font-family: 'Papyrus', fantasy;
+  font-size: 1.2rem;
+  margin-left: 15px;
+}
+
+.top-header {
+  background-color: var(--ceramic);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.top-header h1 {
+  color: var(--night);
+  font-family: var(--main-font-family);
+  font-size: 3rem;
+  margin-top: 0;
+}
+
+.top-header button {
+  font-size: 2em;
+  cursor: pointer;
+  width: 200px;
+  border: none;
+  background: none;
+  color: #0b140e;
+}
+
+nav {
+  color: #0b140e;
+  width: 0%;
+  margin-top: 20px;
+  cursor: pointer;
+  padding: 0;
+}
+
+a.nav-link {
+  background-color: var(--yolk);
+  color: #0b140e;
+  border-radius: 50px;
+  width: 100%;
+  margin-left: 37vw;
+  cursor: pointer;
+}
+
+.search-bar {
+  background-color: var(--ceramic);
+  border: 1px solid var(--lime);
+  border-radius: 10px;
+  width: 30vw;
+  height: 5vh;
+  margin-top: 20px;
+  margin-left: 35vw;
+}
+
+.search-bar input {
+  background-color: var(--ceramic);
+  border: none;
+  border-radius: 10px;
+  width: 80%;
+  height: 90%;
+  font-size: 1rem;
+}
+
+.search-bar button {
+  background-color: var(--yolk);
+  border: none;
+  color: var(--night);
+  font-family: var(--main-font-family);
+  font-size: 1rem;
+  width: 20%;
+  height: 100%;
+}
+
+.top-header h1{
+  color: var(--yolk);
+  font-family: var(--main-font-family);
+  font-size: 3rem;
+  margin-top: 0;
+}
+
+.display {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.display h1 {
+  color: var(--van-gogh);
+  font-family: var(--main-font-family);
+  font-size: 2.3rem;
+  margin-top: 30px;
+}
