@@ -16,17 +16,19 @@
   const router = useRouter();
   
   const handleSubmit = async () => {
-    const url = project.value.id ? `/api/projects/${project.value.id}` : '/api/projects';
-    const method = project.value.id ? 'put' : 'post';
-  
-    try {
-      await axios[method](url, project.value);
-      router.push('/projects');
-    } catch (error) {
-      console.error(error);
-      alert('Erreur lors de la sauvegarde du projet');
-    }
-  };
+  const url = project.value.id ? `/api/projects/${project.value.id}` : '/api/projects';
+  const method = project.value.id ? 'put' : 'post';
+
+  try {
+    const response = await axios[method](url, project.value);
+    router.push('/projects');
+  } catch (error) {
+    console.error(error);
+    alert(`Erreur lors de la sauvegarde du projet : ${error.response?.data?.message || error.message}`);
+  }
+};
+
+
   
   watch(() => props.project, (newProject) => {
     if (newProject) {

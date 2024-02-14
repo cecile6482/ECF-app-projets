@@ -1,4 +1,6 @@
+require('dotenv').config();
 const jwt = require('jsonwebtoken');
+
 
 const verifyToken = (req, res, next) => {
   // Récupérer le token du header de la requête
@@ -19,7 +21,7 @@ const verifyToken = (req, res, next) => {
     }
 
     // Vérifier le token
-    const decoded = jwt.verify(token, process.env.JWT_SECRET);
+    const decoded = jwt.verify(token, 'MySecretKey');
     req.user = decoded;
   } catch (err) {
     return res.status(401).send({
